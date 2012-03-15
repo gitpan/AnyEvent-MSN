@@ -1,10 +1,10 @@
 {
-   "abstract" : "Exactly what you're expecting...",
+   "abstract" : "Simple, Less Annoying Client for Microsoft's Windows Live Messenger Network",
    "author" : [
       "Sanko Robinson <sanko@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Module::Build version 0.4, CPAN::Meta::Converter version 2.120630",
    "keywords" : [
       "MSN",
       "client",
@@ -12,7 +12,10 @@
       "IM",
       "instant",
       "message",
-      "Windows"
+      "Windows",
+      "Live",
+      "Messenger",
+      "WLM"
    ],
    "license" : [
       "artistic_2"
@@ -25,7 +28,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : 0
+            "Test::More" : "0"
          }
       },
       "configure" : {
@@ -54,11 +57,15 @@
    "provides" : {
       "AnyEvent::MSN" : {
          "file" : "lib/AnyEvent/MSN.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       },
       "AnyEvent::MSN::Protocol" : {
          "file" : "lib/AnyEvent/MSN/Protocol.pm",
-         "version" : "0.001"
+         "version" : "0.002"
+      },
+      "AnyEvent::MSN::Types" : {
+         "file" : "lib/AnyEvent/MSN/Types.pm",
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -70,9 +77,9 @@
          "http://www.perlfoundation.org/artistic_license_2_0"
       ],
       "repository" : {
-         "url" : "git://github.com/sanko/anyevent-msn.git"
+         "url" : "http://github.com/sanko/anyevent-msn/"
       },
       "x_ChangeLog" : "http://github.com/sanko/anyevent-msn/commits"
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

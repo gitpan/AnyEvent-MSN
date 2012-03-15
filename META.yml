@@ -1,5 +1,5 @@
 ---
-abstract: Exactly what you're expecting...
+abstract: "Simple, Less Annoying Client for Microsoft's Windows Live Messenger Network"
 author:
   - 'Sanko Robinson <sanko@cpan.org>'
 build_requires:
@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.38
 dynamic_config: 1
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110930'
+generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.120630'
 keywords:
   - MSN
   - client
@@ -16,6 +16,9 @@ keywords:
   - instant
   - message
   - Windows
+  - Live
+  - Messenger
+  - WLM
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,10 +27,13 @@ name: AnyEvent-MSN
 provides:
   AnyEvent::MSN:
     file: lib/AnyEvent/MSN.pm
-    version: 0.001
+    version: 0.002
   AnyEvent::MSN::Protocol:
     file: lib/AnyEvent/MSN/Protocol.pm
-    version: 0.001
+    version: 0.002
+  AnyEvent::MSN::Types:
+    file: lib/AnyEvent/MSN/Types.pm
+    version: 0.002
 requires:
   AnyEvent: 5.31
   AnyEvent::HTTP: 2.1
@@ -45,6 +51,6 @@ requires:
 resources:
   bugtracker: http://github.com/sanko/anyevent-msn/issues
   license: http://www.perlfoundation.org/artistic_license_2_0
-  repository: git://github.com/sanko/anyevent-msn.git
+  repository: http://github.com/sanko/anyevent-msn/
   x_ChangeLog: http://github.com/sanko/anyevent-msn/commits
-version: 0.001
+version: 0.002
