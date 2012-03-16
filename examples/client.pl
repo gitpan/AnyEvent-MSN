@@ -3,7 +3,7 @@ use AnyEvent;
 use AnyEvent::MSN;
 use 5.012;
 $|++;
-$AnyEvent::MSN::DEBUG++;
+#$AnyEvent::MSN::DEBUG++;
 my ($user, $pass) = @ARGV;    # XXX - Better to use a GetOpt-like module
 my $cv = AnyEvent->condvar;
 ($user, $pass) = ('anyevent_msn@hotmail.com', 'public');

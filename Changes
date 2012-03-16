@@ -1,3 +1,11 @@
+Version 0.003 | 2011-06-17
+
+    Internal/Behavioral Changes:
+     * Increase timeout on SOAP requests and retry on error
+
+    Resolved Issues/Bug Fixes:
+     * Net::SSLeay is now listed as a prerequisite
+
 Version 0.002 | 2012-03-16
 
     Resolved Issues/Bug Fixes:
